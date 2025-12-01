@@ -38,11 +38,11 @@ section {
 header {
     background-color: #64af69;
     box-shadow: var(--shadow);
-    padding: 0.75rem 2rem;
+    padding: 0.55rem 1.7rem;      /* reduced vertical + horizontal padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 2rem;
+    column-gap: 1.5rem;           /* slightly less gap */
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -54,13 +54,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.15rem;
+    gap: 0.08rem;                 /* tighter space between title + location */
 }
 
 header h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.5rem;
-    letter-spacing: 0.18em;
+    font-size: 2.2rem;            /* slightly smaller */
+    letter-spacing: 0.16em;       /* slightly less spread */
     text-transform: uppercase;
     font-weight: 800;
     color: #1f2933;
@@ -69,9 +69,9 @@ header h1 {
 }
 
 header p {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     text-transform: uppercase;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.2em;
     color: #e6fffa;
     opacity: 0.95;
 }
@@ -79,18 +79,18 @@ header p {
 /* Right: Desktop Nav */
 nav {
     display: flex;
-    gap: 1.6rem;
+    gap: 1.3rem;                  /* slightly less gap between nav items */
     align-items: center;
     margin-top: 0;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.85rem;           /* a bit smaller */
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #f7fafc;
-    padding: 0.45rem 0.9rem;
+    padding: 0.35rem 0.8rem;      /* reduced pill height */
     border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.35);
     background-color: rgba(255, 255, 255, 0.05);
@@ -144,14 +144,25 @@ nav a.active {
 @media (max-width: 720px) {
 
     header {
-        padding: 0.75rem 1.25rem;
+        padding: 0.45rem 1rem;     /* smaller header on mobile */
         flex-direction: row;
         align-items: center;
-        row-gap: 0.5rem;
+        row-gap: 0.35rem;
     }
 
     .header-left {
-        max-width: 70%;
+        max-width: 72%;
+    }
+
+    /* smaller site title on mobile */
+    header h1 {
+        font-size: 1.7rem;
+        letter-spacing: 0.13em;
+    }
+
+    header p {
+        font-size: 0.7rem;
+        letter-spacing: 0.18em;
     }
 
     .hamburger {
@@ -160,12 +171,12 @@ nav a.active {
 
     nav {
         position: absolute;
-        top: 68px;
+        top: 60px;                /* a bit closer to top since header is shorter */
         right: 16px;
         background-color: #ffffff;
         flex-direction: column;
         width: 190px;
-        padding: 0.85rem 0.85rem;
+        padding: 0.75rem 0.8rem;
         border-radius: 12px;
         box-shadow: var(--shadow);
         display: none;
@@ -179,12 +190,13 @@ nav a.active {
         width: 100%;
         text-align: left;
         border-radius: 8px;
-        padding: 0.7rem 0.5rem;
+        padding: 0.6rem 0.45rem;
         color: #1a202c;
         border: none;
         background-color: transparent;
         box-shadow: none;
         transform: none;
+        font-size: 0.85rem;
     }
 
     nav a:hover {
