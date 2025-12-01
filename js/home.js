@@ -4,13 +4,17 @@
 
 // List of images + titles for the gallery
 const galleryItems = [
-     {
+    {
+        src: "resources/society logo.png",
+        title: "Lemon Society"
+    },
+    {
         src: "resources/state fruit.jpg",
         title: "State Fruit of Assam"
     },
     {
         src: "resources/lemon.jpg",
-        title: "Assam Lemon (Kaji Nemu)"
+        title: "Assam Lemon (Nemu)"
     },
     {
         src: "resources/meeting.jpg",
