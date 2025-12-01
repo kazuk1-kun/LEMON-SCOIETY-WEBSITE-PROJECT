@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon Society | Home</title>
+    <link rel="icon" type="image/png" href="resources\lemonsociety logo.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="header-left">
+            <h1>Lemon Society</h1>
+            <p>Assam, India</p>
+        </div>
+
+        <!-- Hamburger button (mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav id="navMenu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="events.html">EVENTS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+        <!-- GALLERY text that links to full gallery page -->
+        <a href="gallery.html" class="gallery-heading-link">
+            <h2>GALLERY</h2>
+        </a>
+
+        <div class="gallery-box">
+            <button id="prevBtn">&lt;</button>
+
+            <div class="image-area">
+                <!-- Main slider image -->
+                <img id="galleryImage" src="resources/lemon1.jpg" alt="Gallery image">
+            </div>
+
+            <button id="nextBtn">&gt;</button>
+        </div>
+
+        <!-- Title / caption of current image -->
+        <p id="imageCaption">Image title will appear here</p>
+    </section>
+
+    <!-- ASSAM LEMON SECTION -->
+    <section id="assam-lemon">
+        <!-- Image of a lemon -->
+        <div class="lemon-image">
+            <img src="resources/lemon.jpg" alt="Assam lemon">
+        </div>
+
+        <!-- Content about Assam lemon -->
+        <div class="assam-content">
+            <h2>ASSAM LEMON</h2>
+            <p>
+                Assam Lemon (locally known as &quot;Kaji Nemu&quot;) is a unique aromatic lemon variety
+                from Assam. It is widely used in traditional cuisine, beverages and has high nutritional
+                and commercial value. Lemon Society works towards promoting its cultivation, improving
+                farmer income and increasing awareness about its benefits.
+            </p>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/global.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
