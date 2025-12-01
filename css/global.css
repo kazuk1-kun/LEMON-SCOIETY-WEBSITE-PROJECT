@@ -38,11 +38,11 @@ section {
 header {
     background-color: #64af69;
     box-shadow: var(--shadow);
-    padding: 0.55rem 1.7rem;      /* reduced vertical + horizontal padding */
+    padding: 0.55rem 1.7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 1.5rem;           /* slightly less gap */
+    column-gap: 1.5rem;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -54,13 +54,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.08rem;                 /* tighter space between title + location */
+    gap: 0.08rem;
 }
 
 header h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.2rem;            /* slightly smaller */
-    letter-spacing: 0.16em;       /* slightly less spread */
+    font-size: 2.2rem;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     font-weight: 800;
     color: #1f2933;
@@ -79,18 +79,18 @@ header p {
 /* Right: Desktop Nav */
 nav {
     display: flex;
-    gap: 1.3rem;                  /* slightly less gap between nav items */
+    gap: 1.3rem;
     align-items: center;
     margin-top: 0;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 0.85rem;           /* a bit smaller */
+    font-size: 0.85rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #f7fafc;
-    padding: 0.35rem 0.8rem;      /* reduced pill height */
+    padding: 0.35rem 0.8rem;
     border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.35);
     background-color: rgba(255, 255, 255, 0.05);
@@ -144,25 +144,28 @@ nav a.active {
 @media (max-width: 720px) {
 
     header {
-        padding: 0.45rem 1rem;     /* smaller header on mobile */
+        padding: 0.4rem 0.9rem;      /* smaller header on mobile */
         flex-direction: row;
         align-items: center;
-        row-gap: 0.35rem;
+        row-gap: 0.2rem;
     }
 
     .header-left {
-        max-width: 72%;
+        max-width: 75%;
+        gap: 0;                      /* REMOVE SPACE BETWEEN H1 AND P */
     }
 
-    /* smaller site title on mobile */
+    /* MOBILE TITLE – SMALLER + NO LETTER SPACING */
     header h1 {
-        font-size: 1.7rem;
-        letter-spacing: 0.13em;
+        font-size: 1.6rem;           /* not less than h2 (1.6rem) */
+        letter-spacing: 0;           /* REMOVE WEIRD SPACING BETWEEN LETTERS */
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
     }
 
     header p {
-        font-size: 0.7rem;
-        letter-spacing: 0.18em;
+        font-size: 0.7rem;           /* slightly smaller */
+        letter-spacing: 0.08em;      /* MUCH less spaced out */
+        margin-top: 0;               /* no extra gap */
     }
 
     .hamburger {
@@ -171,12 +174,12 @@ nav a.active {
 
     nav {
         position: absolute;
-        top: 60px;                /* a bit closer to top since header is shorter */
-        right: 16px;
+        top: 56px;                   /* dropdown closer to header */
+        right: 12px;
         background-color: #ffffff;
         flex-direction: column;
-        width: 190px;
-        padding: 0.75rem 0.8rem;
+        width: 185px;
+        padding: 0.7rem 0.8rem;
         border-radius: 12px;
         box-shadow: var(--shadow);
         display: none;
@@ -190,13 +193,13 @@ nav a.active {
         width: 100%;
         text-align: left;
         border-radius: 8px;
-        padding: 0.6rem 0.45rem;
+        padding: 0.55rem 0.45rem;
         color: #1a202c;
         border: none;
         background-color: transparent;
         box-shadow: none;
         transform: none;
-        font-size: 0.85rem;
+        font-size: 0.82rem;
     }
 
     nav a:hover {
