@@ -72,7 +72,7 @@
 }
 
 #objectives ul li {
-    margin-bottom: 0.75rem;      /* increased spacing */
+    margin-bottom: 2rem;      /* increased spacing */
     font-size: 1.03rem;
     color: #2c2c2c;              /* darker list text */
     line-height: 1.65;

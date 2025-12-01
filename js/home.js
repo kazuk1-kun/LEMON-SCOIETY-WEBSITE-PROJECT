@@ -4,6 +4,10 @@
 
 // List of images + titles for the gallery
 const galleryItems = [
+     {
+        src: "resources/state fruit.jpg",
+        title: "State Fruit of Assam"
+    },
     {
         src: "resources/lemon.jpg",
         title: "Assam Lemon (Kaji Nemu)"
@@ -12,11 +16,6 @@ const galleryItems = [
         src: "resources/meeting.jpg",
         title: "Comitte Members' Meeting"
     },
-    {
-        src: "resources/society logo.jpg",
-        title: "Lemon Society Logo"
-    }
-    // Add more objects here if you like
 ];
 
 let currentIndex = 0;
