@@ -33,17 +33,17 @@ section {
 }
 
 /* ===========================
-   Header + Navbar (Improved)
+   Header + Navbar
 =========================== */
 
 header {
     background-color: #64af69;
     box-shadow: var(--shadow);
-    padding: 0.55rem 1.7rem;
+    padding: 0.4rem 1.4rem;          /* ↓ smaller header height */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 1.5rem;
+    column-gap: 1.2rem;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -53,14 +53,14 @@ header {
 .header-left {
     display: flex;
     flex-direction: column;
-    gap: 0.08rem;
+    gap: 0.05rem;
 }
 
-/* TITLE FONT INCREASED SLIGHTLY */
+/* LEMON SOCIETY – MUCH BIGGER ON DESKTOP */
 header h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.35rem;       /* ↑ slightly */
-    letter-spacing: 0.14em;
+    font-size: 2.9rem;               /* ↑ increased a lot */
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     font-weight: 800;
     color: #1f2933;
@@ -69,30 +69,34 @@ header h1 {
 }
 
 header p {
-    font-size: 0.92rem;       /* ↑ slightly */
+    font-size: 0.88rem;
     text-transform: uppercase;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.17em;
     color: #e6fffa;
 }
 
-/* NAVIGATION */
+/* NAVIGATION – SMALLER BUTTONS / TEXT */
+
 nav {
     display: flex;
-    gap: 1.35rem;             /* a little wider */
+    gap: 1.1rem;                     /* ↓ slightly tighter */
     align-items: center;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 1rem;          /* ↑ increased */
-    letter-spacing: 0.12em;
+    font-size: 0.9rem;               /* ↓ smaller than before (was 1rem) */
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #f7fafc;
-    padding: 0.4rem 0.85rem;
+    padding: 0.3rem 0.7rem;          /* ↓ less padding */
     border-radius: 999px;
-    border: 1px solid rgba(255,255,255,0.35);
-    background-color: rgba(255,255,255,0.05);
-    transition: background-color .15s ease, color .15s ease, transform .1s ease;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.04);
+    transition:
+        background-color .15s ease,
+        color .15s ease,
+        transform .1s ease;
 }
 
 nav a:hover {
@@ -114,9 +118,9 @@ nav a.active {
 
 .hamburger {
     display: none;
-    width: 30px;
+    width: 28px;                      /* a bit smaller */
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
     cursor: pointer;
 }
 
@@ -132,7 +136,7 @@ nav a.active {
 @media (max-width: 720px) {
 
     header {
-        padding: 0.45rem 1rem;
+        padding: 0.35rem 0.9rem;      /* ↓ smaller header on mobile */
     }
 
     .header-left {
@@ -140,14 +144,14 @@ nav a.active {
         gap: 0;
     }
 
-    /* Mobile title */
+    /* MOBILE TITLE – STILL BIG, BUT NOT OVERKILL */
     header h1 {
-        font-size: 1.75rem;       /* ↑ larger but still smaller than PC */
-        letter-spacing: 0;
+        font-size: 2.1rem;           /* ↑ bigger than before, but fits */
+        letter-spacing: 0.04em;      /* some spacing, not too much */
     }
 
     header p {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
         letter-spacing: 0.08em;
     }
 
@@ -157,12 +161,12 @@ nav a.active {
 
     nav {
         position: absolute;
-        top: 56px;
+        top: 54px;
         right: 12px;
         width: 190px;
         background-color: white;
         flex-direction: column;
-        padding: 0.75rem;
+        padding: 0.7rem;
         border-radius: 12px;
         display: none;
         box-shadow: var(--shadow);
@@ -175,8 +179,8 @@ nav a.active {
     nav a {
         width: 100%;
         text-align: left;
-        font-size: 0.9rem;        /* ↑ better readability */
-        padding: 0.55rem 0.45rem;
+        font-size: 0.85rem;          /* ↓ smaller nav text on mobile */
+        padding: 0.5rem 0.45rem;
         border: none;
         background: none;
         color: #1a202c;
@@ -193,14 +197,14 @@ nav a.active {
 =========================== */
 
 h2 {
-    font-size: 1.75rem;      /* ↑ improved match with About page */
+    font-size: 1.75rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
 }
 
 h3 {
-    font-size: 1.35rem;      /* ↑ better visibility */
+    font-size: 1.35rem;
     margin-bottom: 0.75rem;
 }
 
