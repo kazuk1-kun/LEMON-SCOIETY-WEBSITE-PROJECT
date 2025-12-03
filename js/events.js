@@ -6,30 +6,18 @@
 // date format: "YYYY-MM-DD"
 const eventsData = [
     {
-        title: "Farmer Training on Assam Lemon Cultivation",
-        date: "2025-12-10",
-        location: "Guwahati, Assam",
-        description: "A practical workshop for farmers focusing on improved cultivation, pruning, and pest management for Assam Lemon."
+        title: "First Public Meeting Held",
+        date: "2025-09-02",
+        location: "Google Online Platform",
+        description: "Developed 'Lemon Scoiety, Assam, India' and constructed the executive body of the society."
     },
     {
-        title: "Awareness Meet on Value Addition",
-        date: "2025-11-20",
-        location: "Jorhat, Assam",
-        description: "Discussion on lemon-based products such as pickles, beverages, and essential oils, and how to market them."
+        title: "First Executive Meeting Held",
+        date: "2025-11-23",
+        location: "Google Online Platform",
+        description: "Discussed on constitution, website and advisory panel."
     },
-    {
-        title: "Lemon Society Foundation Day",
-        date: "2025-09-15",
-        location: "Beltola, Guwahati",
-        description: "Annual gathering of members, farmers, and supporters to review activities and plan future initiatives."
-    },
-    {
-        title: "Soil Health & Organic Practices Session",
-        date: "2026-01-05",
-        location: "Nagaon, Assam",
-        description: "Session on soil health, organic inputs, and sustainable farming practices for citrus orchards."
-    }
-    // Add more events here later if you want
+    
 ];
 
 // Helper: parse "YYYY-MM-DD" safely as local date

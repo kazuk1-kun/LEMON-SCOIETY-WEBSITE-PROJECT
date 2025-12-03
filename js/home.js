@@ -11,8 +11,8 @@ const galleryItems = [
     },
 
     {
-        src: "resources/lemon cultivation book.jpg",
-        title: "Lemon Cultivation Book"
+        src: "resources/article.jpg",
+        title: "News Report on Lemon Scoiety"
     },
 
     {
