@@ -4,10 +4,17 @@
 
 // List of images + titles for the gallery
 const galleryItems = [
+
     {
         src: "resources/society logo.png",
         title: "Lemon Society"
     },
+
+    {
+        src: "resources/lemon cultivation book.jpg",
+        title: "Lemon Cultivation Book"
+    },
+
     {
         src: "resources/Variety-1.jpeg.jpg",
         title: "Variety-1"
@@ -28,10 +35,7 @@ const galleryItems = [
         src: "resources/Variety-5.jpg",
         title: "Variety-5"
     },
-    {
-        src: "resources/meeting.jpg",
-        title: "Comitte Members' Meeting"
-    },
+    
 ];
 
 let currentIndex = 0;
