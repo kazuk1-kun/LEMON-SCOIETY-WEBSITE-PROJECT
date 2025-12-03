@@ -89,7 +89,7 @@
 
 #objectives {
     max-width: 900px;
-    margin: 0 auto 1.6rem auto;       /* reduced spacing below */
+    margin: 0 auto 0.8rem auto;       /* reduced spacing below */
 }
 
 #objectives h2 {
@@ -131,7 +131,7 @@
 
 #members {
     max-width: 900px;
-    margin: 0 auto 2.0rem auto;       /* smaller gap at bottom */
+    margin: 0 auto 3.0rem auto;       /* smaller gap at bottom */
 }
 
 .member-box {
