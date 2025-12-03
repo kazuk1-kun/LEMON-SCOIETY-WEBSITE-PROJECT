@@ -9,12 +9,24 @@ const galleryItems = [
         title: "Lemon Society"
     },
     {
-        src: "resources/state fruit.jpg",
-        title: "State Fruit of Assam"
+        src: "resources/Variety-1.jpeg.jpg",
+        title: "Variety-1"
     },
     {
-        src: "resources/lemon.jpg",
-        title: "Assam Lemon (Nemu)"
+        src: "resources/Variety-2.jpg",
+        title: "Variety-2"
+    },
+    {
+        src: "resources/Variety-3.jpeg.jpg",
+        title: "Variety-3"
+    },
+    {
+        src: "resources/Variety-4.jpg",
+        title: "Variety-4"
+    },
+    {
+        src: "resources/Variety-5.jpg",
+        title: "Variety-5"
     },
     {
         src: "resources/meeting.jpg",

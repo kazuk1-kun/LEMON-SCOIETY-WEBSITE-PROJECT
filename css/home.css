@@ -50,14 +50,15 @@
     position: relative;
     overflow: hidden;
     border-radius: var(--card-radius);
-    border: 2px dashed #e2e8f0;
+    border: none;  
     background-position: center;
-    background-size: cover;      /* used for blurred bg */
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 /* Blurred, stretched background (only when class added) */
 .image-area.has-blur-bg::before {
@@ -159,10 +160,13 @@
 
 /* Assam Lemon text */
 .assam-content p {
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 0.9rem;
-    font-size: 1.04rem;           /* slightly larger */
+    font-size: 1.1rem;           /* slightly larger */
     color: #2b2b2b;               /* better contrast */
     line-height: 1.7;
+    text-align: justify;
+
 }
 
 /* Mobile stacking */

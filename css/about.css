@@ -3,19 +3,26 @@
 =========================== */
 
 #description {
-    text-align: left;
+    text-align: justify;
     max-width: 900px;
-    margin: 0 auto 2.2rem auto;
+    margin: 0 auto 1.4rem auto;      /* LESS SPACE BELOW */
     color: var(--text);
-    font-size: 1.05rem;          /* increased font size */
-    line-height: 1.7;            /* improved readability */
+    font-size: 1.12rem;              /* was 1.05rem */
+    line-height: 1.8;                /* slightly more comfortable */
 }
 
 #description p {
-    margin-bottom: 0.8rem;       /* more spacing */
-    color: #2a2a2a;              /* slightly darker text */
+    margin-bottom: 0.7rem;
+    color: #232323;                  /* a bit darker */
 }
 
+/* OPTIONAL: make the welcome headings a bit bigger on this page */
+#description h2 {
+    font-size: 1.85rem;              /* larger section headings */
+    color: #245c35;
+    margin-bottom: 0.4rem;
+    font-weight: 750;
+}
 
 /* ===========================
    About Page – AIM Section
@@ -24,24 +31,55 @@
 #aim .aim-box {
     border-radius: var(--card-radius);
     background-color: #ffffff;
-    border: 1px solid #d7e3de;   /* more contrast */
-    padding: 1.75rem 2rem;       /* larger padding */
+    border: 1px solid #d7e3de;
+    padding: 1.7rem 2rem;
     box-shadow: var(--shadow);
     max-width: 900px;
-    margin: 0 auto 2.3rem auto;
-    font-size: 1.05rem;
-    color: #2a2a2a;              /* darker text */
-    line-height: 1.65;
+    margin: 0 auto 1.6rem auto;      /* LESS GAP AFTER AIM */
+    font-size: 1.12rem;              /* was 1.05rem */
+    color: #232323;
+    line-height: 1.75;
 }
 
 #aim h3 {
-    font-size: 1.3rem;           /* clearer section heading */
-    margin-bottom: 0.6rem;
-    color: #245c35;              /* deeper green for contrast */
+    font-size: 1.5rem;               /* was 1.3rem */
+    margin-bottom: 0.5rem;
+    color: #245c35;
+    font-weight: 700;
 }
 
 #aim p {
-    margin-top: 0.5rem;
+    margin-top: 0.45rem;
+}
+
+/* ===========================
+   About Page – IMAGE BELOW AIM
+   (Smaller, clean, no white box)
+=========================== */
+
+#about-image {
+    max-width: 600px;                /* smaller than before */
+    margin: 1.2rem auto 1.8rem auto;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);       /* subtle shadow only */
+}
+
+#about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--card-radius);
+    display: block;                  /* removes tiny gaps */
+}
+
+/* Mobile – even smaller */
+@media (max-width: 720px) {
+    #about-image {
+        max-width: 100%;
+        margin: 1rem auto 1.4rem auto;
+    }
 }
 
 
@@ -51,73 +89,41 @@
 
 #objectives {
     max-width: 900px;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 1.6rem auto;       /* reduced spacing below */
 }
 
 #objectives h2 {
-    font-size: 1.55rem;
+    font-size: 1.8rem;                /* was 1.55rem */
     color: #245c35;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
+    font-weight: 750;
 }
 
 #objectives .objectives-box {
-    display: grid;
+    display: block;
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-    gap: 1.75rem;                /* more spacing */
+    gap: 1.5rem;
     align-items: center;
 }
 
-#objectives ul {
-    margin-left: 1rem;
+/* Use OL instead of UL (you used <ol> in HTML) */
+#objectives ol {
+    margin-left: 1.1rem;
+    padding-left: 0.3rem;
 }
 
-#objectives ul li {
-    margin-bottom: 2rem;      /* increased spacing */
-    font-size: 1.03rem;
-    color: #2c2c2c;              /* darker list text */
-    line-height: 1.65;
+#objectives ol li {
+    margin-bottom: 1.3rem;
+    font-size: 1.12rem;               /* was 1.03rem */
+    color: #262626;
+    line-height: 1.8;
 }
 
 /* Text side */
 #objectives .objectives-text {
-    font-size: 1.05rem;
-    color: #222;                 /* stronger contrast */
+    font-size: 1.14rem;               /* was 1.05rem */
+    color: #222;
 }
-
-/* Image / visual side */
-.objectives-image {
-    aspect-ratio: 4 / 3;
-    width: 100%;
-    border-radius: var(--card-radius);
-    background-color: #ffffff;
-    border: 1px solid #d7e3de;
-    box-shadow: var(--shadow);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    font-size: 1rem;
-    color: #777;
-}
-
-.objectives-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: var(--card-radius);
-}
-
-/* Stack on mobile */
-@media (max-width: 720px) {
-    #objectives .objectives-box {
-        grid-template-columns: 1fr;
-    }
-
-    #objectives h2 {
-        text-align: center;
-    }
-}
-
 
 /* ===========================
    Committee Members Section
@@ -125,95 +131,99 @@
 
 #members {
     max-width: 900px;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 2.0rem auto;       /* smaller gap at bottom */
 }
 
 .member-box {
     background-color: #ffffff;
     border: 1px solid #d7e3de;
     border-radius: var(--card-radius);
-    padding: 2rem;               /* more padding */
+    padding: 1.9rem;
     box-shadow: var(--shadow);
 }
 
 .member-box h3 {
-    margin-bottom: 1.2rem;
-    font-size: 1.45rem;
+    margin-bottom: 0.9rem;
+    font-size: 1.6rem;                /* was 1.45rem */
+    color: #245c35;
+    font-weight: 750;
+}
+
+/* Single collapsible section (Advisors / Core / Consultants) */
+.member-section {
+    margin-top: 0.7rem;
+}
+
+/* clickable header bar */
+.member-section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f9f7;
+    border-radius: 8px;
+    border: 1px solid #d7e3de;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    font-size: 1.08rem;               /* was 1.02rem */
+    font-weight: 600;
+    color: #1f2933;
+}
+
+/* arrow indicator */
+.member-section-header .arrow {
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+/* rotated arrow when open */
+.member-section.open .member-section-header .arrow {
+    transform: rotate(180deg);
+}
+
+/* body content of each section */
+.member-section-body {
+    margin-top: 0.45rem;
+    padding: 0.4rem 0.1rem 0.1rem;
+    display: none;                     /* HIDDEN BY DEFAULT, JS will toggle */
+}
+
+.member-section.open .member-section-body {
+    display: block;
+}
+
+.member-section-body p {
+    font-size: 1.05rem;                /* was 0.98rem */
+    color: #2a2a2a;
+    margin-bottom: 0.55rem;
+    line-height: 1.7;
+}
+
+.member-section-body h5 {
+    font-size: 1.15rem;                /* was 1.05rem */
+    margin-top: 0.4rem;
+    margin-bottom: 0.15rem;
     color: #245c35;
 }
 
-/* Member Cards Layout */
-.member-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.member-card {
-    display: grid;
-    grid-template-columns: 130px auto; /* slightly larger image space */
-    gap: 1.5rem;
-    padding: 1.25rem;
-    border-radius: var(--card-radius);
-    background-color: #fefefe;
-    border: 1px solid #d7e3de;
-    box-shadow: var(--shadow);
-}
-
-/* Member Photo */
-.member-photo {
-    width: 130px;                /* bigger image */
-    height: 130px;
-    border-radius: var(--card-radius);
-    overflow: hidden;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.member-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Member Info */
-.member-info .member-name {
-    font-size: 1.25rem;          /* larger name */
-    font-weight: 700;
-    color: #222;
-}
-
-.member-info .member-role {
-    font-size: 1.05rem;
-    color: #2f855a;
-    margin: 0.35rem 0;
-    font-weight: 500;
-}
-
-.member-info .member-address {
-    font-size: 0.98rem;
-    color: #555;                 /* increased contrast */
-}
-
-.member-info .member-note {
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-    color: #2b2b2b;
-    line-height: 1.6;
+/* Strong names stand out a bit more */
+.member-section-body strong {
+    font-weight: 600;
 }
 
 /* Mobile Responsive */
 @media (max-width: 720px) {
 
-    .member-card {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 1.4rem;
+    .member-box {
+        padding: 1.6rem;
     }
 
-    .member-photo {
-        margin: 0 auto;
+    .member-section-header {
+        font-size: 1.02rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .member-section-body p {
+        font-size: 1.02rem;
     }
 }
