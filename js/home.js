@@ -6,7 +6,7 @@
 const galleryItems = [
 
     {
-        src: "resources/society logo.png",
+        src: "resources/society logo.jpg",
         title: "Lemon Society"
     },
 
